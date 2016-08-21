@@ -1,0 +1,101 @@
+/* 주완 Juwan */
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+	background-color: #000;
+	color: #fff;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 13px;
+}
+
+a {
+	color: #f9c;
+	text-decoration: none;
+}
+a:active, a:hover { color:#f39; }
+
+#theader {
+	clear: both;
+	height: 40px;
+	width: 100%;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	font-size: 30px;
+	line-height: 40px;
+	background-color: #402;
+	text-align: center;
+	color: #F06;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #903;
+}
+
+.contbox {
+	background-color: #201;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+
+.contbox h3 {
+	border-bottom-width: 3px;
+	border-bottom-style: double;
+	border-bottom-color: #c03;
+	color: #F06;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 8px;
+	margin-bottom: 4px;
+	margin-left: 8px;
+}
+
+.contbox ul {
+	margin-top: 0px;
+	margin-right: 8px;
+	margin-bottom: 0px;
+	margin-left: 8px;
+	padding: 0px;
+	min-height: 124px;
+}
+
+.contbox li {
+	margin: 0px;
+	padding: 4px;
+	list-style-type: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #903;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.contbox li:last-of-type {
+	border-bottom: none;
+}
+
+.contbox .inndiv {
+	line-height: 17px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.contbox .headbig {
+	font-size: 26px;
+	line-height: 1;
+	font-weight: bold;
+	float: left;
+	display: inline-block;
+	margin-right: 2px;
+	padding-top: 2px;
+}
+
+.contbox .ximg {
+	min-width: 100%;
+}

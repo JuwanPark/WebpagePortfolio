@@ -1,0 +1,126 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>상품정보 :: 주완컴퓨터</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="layout.css" rel="stylesheet" type="text/css">
+<link href="layoutadd.css" rel="stylesheet" type="text/css">
+<link href="mystyle.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script src="toggledisplay.js"></script>
+<!-- jQuery library (served from Google) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    
+    <!-- bxSlider 시작 -->
+      <!-- bxSlider Javascript file -->
+      <script src="./bxslider/jquery.bxslider.min.js"></script>
+      <script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+      
+      <!-- bxSlider CSS file -->
+      <link href="./bxslider/jquery.bxslider.css" rel="stylesheet" />
+      <link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css">
+      <script>
+        $(document).ready(function(){
+          $('.bxslider').bxSlider();
+        });
+      </script>
+    <!-- bxSlider 끝 -->
+
+</head>
+<body>
+<div class="" id="siteheader">
+  <a href="#" onClick="toggledisplay('sitetopmenu'); menubtnchange();" id="menubtn"><img src="img/menubtn.png" alt="메뉴" name="menubtn" id="menubtnimg"></a>
+  <a href="index.html"><img src="img/timage.png" alt="주완컴퓨터" name="titleimg" id="titleimg"></a>
+</div>
+<div class="" id="sitetopmenu" style="display: none;"><a href="index.html">홈</a><a href="products_com.html">완제품</a><a href="products_part.html">부품/주변기기</a><a href="qna.html">Q&amp;A</a><a href="storeintro.html">매장소개</a></div>
+<div class="gridContainer clearfix">
+  <div id="productimg" class="contbox">
+    <div class="bxs90">
+      <ul class="bxslider">
+        <li><img src="./img/detopthumb.jpg" /></li>
+        <li><img src="./img/gamingpc.jpg" /></li>
+        <li><img src="./img/openpc.jpg" /></li>
+      </ul>
+    </div>
+  </div>
+  <div id="productinfo" class="contbox">
+  	<h3>상품정보</h3>
+    <table>
+      <tr>
+      	<th>상품</th>
+      	<td class="productname">좋은 컴퓨터</td>
+      </tr>
+      <tr>
+      	<th>가격</th>
+      	<td><span class="price">799,000</span>원</td>
+      </tr>
+      <tr>
+      	<th colspan="2">간단한 정보</th>
+      </tr>
+      <tr>
+      	<td colspan="2">고성능 CPU와 외장 그래픽 카드를 장착하여 3D 게임이나 그래픽 작업 등을 하는 데 안성맞춤인 컴퓨터.</th>
+      </tr>
+    </table>
+  </div>
+  <div id="details" class="contbox">
+  	<h3>상세정보</h3>
+  	<div id="Accordion1" class="Accordion" tabindex="0">
+  	  <div class="AccordionPanel">
+  	    <div class="AccordionPanelTab">상품 이미지</div>
+  	    <div class="AccordionPanelContent"><img src="./img/detopthumb.jpg" style="margin: 10px auto; display: block;" /></div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">상품 사양</div>
+        <div class="AccordionPanelContent">
+          <p>고성능 CPU와 외장 그래픽 카드를 장착하여 3D 게임이나 그래픽 작업 등을 하는 데 안성맞춤인 컴퓨터.</p>
+          <p>프로세서: 인텔 G3240 하스웰<br>
+          그래픽: 엔비디아 지포스 GT730<br>
+          메모리: DDR3 8GB<br>
+          저장장치: 256GB SSD, 1TB HDD<br>
+          ODD: DVD-RW<br>
+          USB: USB 3.0<br>
+          운영체제: 윈도우즈 10 64비트</p>
+        </div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">배송정보</div>
+        <div class="AccordionPanelContent">
+          <p>배송은 기본적으로 당일배송입니다. 단, 배송시간이 마감된 이후의 주문이나 휴무일 주문은 다음 영업일에 배송합니다.</p>
+          <p>배송비는 상품 가격이 3만원 미만일시 고객님 부담, 3만원 이상일시 무료입니다.<br>
+          ※묶음주문시 주문 상품 가격의 합계가 3만원 이상일 경우에도 무료로 배송합니다.<br>
+          ※도서 및 산간지역 배송시 추가배송비는 고객님께서 부담합니다.</p>
+          <p>상품 수령은 배송일로부터 1~2일 이내(휴무일 제외)에 가능합니다. 단, 명절 특수로 인한 물량 폭주, 천재지변, 택배사의 사정 등 불가항력적인 사유로 배송이 지연되는 경우가 있습니다.</p>
+          <p>교환 및 반품은 상품 수령 후 7일 이내에 가능합니다. 다만, 고객님의 과실로 인하여 상품이 멸실·훼손된 경우는 교환 및 반품이 불가합니다.</p>
+          <p>교환 및 반품시 OO택배사를 이용하시기 바라며, 배송비는 고객님께서 부담하셔야 합니다.<br>
+          단, 상품 불량이나 오배송 등 본 매장의 귀책사유로 인한 경우는 예외로 본 매장에서 배송비를 부담합니다.</p>
+        </div>
+      </div>
+  	</div>
+  </div>
+  <div id="footh" style="background-color:#050; clear: both; text-align:center; font-weight: bold; font-size: 16px; padding-top: 8px; padding-bottom: 8px;">※ 본 사이트는 상업적 용도가 아니며 교육용 목적으로 제작된 사이트입니다.</div>
+</div>
+<script type="text/javascript">
+var Accordion1 = new Spry.Widget.Accordion("Accordion1");
+</script>
+</body>
+</html>

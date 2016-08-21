@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      /* 검정 배경 */
+      div.mdiv {
+        width: 64px;
+        height: 64px;
+        padding: 16px 16px 16px 16px;
+        background-color: #000000;
+      }
+      
+      /* 회전하는 바퀴 */
+      img.lwheel {
+        -webkit-animation: spin 1s infinite linear;
+           -moz-animation: spin 1s infinite linear;
+                animation: spin 1s infinite linear;
+      }
+      
+      /* 키프레임 (크롬, 사파리, 오페라) */
+      @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      /* 키프레임 (모질라) */
+      @-moz-keyframes spin {
+          0% { -moz-transform: rotate(0deg); }
+        100% { -moz-transform: rotate(360deg); }
+      }
+      
+      /* 키프레임 (표준) */
+      @keyframes spin {
+          0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      
+      /* pre */
+      pre {
+        background-color:#ddeeff;
+        border: 1px dotted #55aaff;
+        padding: 16px 16px 16px 16px;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="mdiv">
+      <img class="lwheel" src="loadingwheel.png" />
+    </div>
+    
+    <h2>css 코드</h2>
+    <pre>
+/* 검정 배경 */
+div.mdiv {
+  width: 64px;
+  height: 64px;
+  padding: 16px 16px 16px 16px;
+  background-color: #000000;
+}
+
+/* 회전하는 바퀴 */
+img.lwheel {
+  -webkit-animation: spin 1s infinite linear;
+     -moz-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
+}
+
+/* 키프레임 (크롬, 사파리, 오페라) */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+/* 키프레임 (모질라) */
+@-moz-keyframes spin {
+    0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); }
+}
+
+/* 키프레임 (표준) */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}</pre>
+  </body>
+
+    <h2>HTML</h2>
+    <pre>
+&lt;div class="mdiv"&gt;
+  &lt;img class="lwheel" src="loadingwheel.png" /&gt;
+&lt;/div&gt;</pre>
+
+</html>

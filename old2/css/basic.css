@@ -1,0 +1,335 @@
+/* ▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣ */
+/* ★ 기본설정 ★ */
+/* ▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣ */
+
+/* ========================================================================== */
+/* 배경 글꼴 */
+/* ========================================================================== */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+body {
+  color: #ffffff;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  margin: 0 0 0 0;
+}
+
+/* ========================================================================== */
+/* 링크 관련 */
+/* ========================================================================== */
+a {
+  text-decoration: none;
+}
+a:link, a:visited           { color:#00ffff; }
+a:active, a:hover, a:focus  { color:#ffffff; background-color:#0000aa; }
+
+a:link span, a:visited span                { color:#00ffff; }
+a:active span, a:hover span, a:focus span  { color:#ffffff; }
+
+/* ========================================================================== */
+/* 기타 기본 요소 */
+/* ========================================================================== */
+pre, textarea  { font-family: 'Nanum Gothic Coding', monospace; }
+button, iframe, input, textarea { border: none; }
+
+.hidden { display: none; }
+.stretcher { clear: both; }
+
+/* ========================================================================== */
+/* 진짜 body는 항상 960 */
+/* ========================================================================== */
+div.rbody {
+  margin: 0 auto;
+  width: 960px;
+}
+
+
+/* ▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣ */
+/* ★ 헤더 및 메뉴바 ★ */
+/* ▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣ */
+header {
+  height: 160px;
+  overflow: hidden;
+}
+
+/* ========================================================================== */
+/* 윗머리 부분 */
+/* ========================================================================== */
+div.htitle {
+  background: rgba(0, 0, 0, .5);
+  height: 120px;
+}
+
+/* ========================================================================== */
+/* 로그인 위젯 */
+/* ========================================================================== */
+div.loginWidget {
+  float: right;
+  background: rgba(0, 0, 0, .5);
+  line-height: 10px;
+  padding: 20px 20px 20px 20px;
+  width: 200px;
+  height: 80px;
+}
+
+div.loginWidget .loginBox {
+  float: left;
+  line-height: 20px;
+  width: 150px;
+}
+
+div.loginWidget .loginInput {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0 0 5px 0;
+  padding: 0 5px 0 5px;
+  width: 140px;
+  height: 25px;
+}
+
+div.loginWidget .loginBtn {
+  float: right;
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+div.loginWidget .chkBox {
+  display: inline-block;
+  float: left;
+  margin: 2px -40px -2px 0;
+  padding: 0 0 0 0;
+  width: 40px;
+  height: 16px;
+}
+
+div.loginWidget label {
+  color: #aaaaaa;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden;
+  text-align: right;
+  top: -12px;
+  width: 125px;
+  height: 20px;
+}
+
+div.loginWidget label .chkSwitch {
+  width: 40px;
+  height: 16px;
+  line-height: 16px;
+  padding: 0 0 0 0;
+  margin-top: 2px;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+
+div.loginWidget label .chkSlider {
+  width: 20px;
+  height: 16px;
+  line-height: 16px;
+  display: block;
+  border-right: 20px solid #2a2a2a;
+  margin-left: -20px;
+  background-color: #7f7f7f;
+}
+
+div.loginWidget .chkBox:checked + label .chkSwitch .chkSlider {
+  margin-left: 0px;
+}
+
+div.loginWidget .moreBtn {
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  float: right;
+  text-align: center;
+}
+
+div.loginWidget #moreJoin {
+  width: 180px;
+  line-height: 20px;
+  font-size: 12px;
+  margin: 0 0 0 0;
+  padding: 10px 10px 10px 10px;
+  display: inline-block;
+  position: relative;
+  float: right;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+div.loginWidget #moreJoin a {
+  padding: 0 10px 0 10px;
+}
+
+div.loginWidget #memberInfo {
+  font-size: 13px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+div.loginWidget .personIcon {
+  display:inline-block;
+  font-size: 18px;
+  float: left;
+  margin-right: 5px;
+}
+
+div.loginWidget .memberName {
+  font-size: 14px;
+}
+
+/* ========================================================================== */
+/* 아래쪽 바 */
+/* ========================================================================== */
+nav {
+  padding: 0 20px 0 20px;
+  height: 40px;
+}
+
+/* ========================================================================== */
+/* 검색창 관련 */
+/* ========================================================================== */
+nav .searchBox {
+  float: right;
+  width: 200px;
+  height: 40px;
+  background: #000000;
+  overflow: hidden;
+}
+
+nav .searchBox .keyword {
+  float: left;
+  width: 140px;
+  height: 40px;
+  padding: 0 10px 0 10px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+nav .searchBox button {
+  float: right;
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+  display: inline-block;
+}
+
+/* ========================================================================== */
+/* 윗줄 메뉴 관련 */
+/* ========================================================================== */
+nav .menus {
+  float: left;
+  width: 700px;
+  height: 40px;
+  overflow: hidden;
+}
+
+nav a {
+  display: inline-block;
+  height: 40px;
+  padding: 0 15px 0 15px;
+  line-height: 35px;
+  float: left;
+}
+
+nav a.sele {
+  height: 35px;
+}
+
+
+/* ▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣ */
+/* ★ 몸통 ★ */
+/* ▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣ */
+div.torso {
+  background: #000000;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+}
+
+/* ========================================================================== */
+/* 사이드바 */
+/* ========================================================================== */
+aside {
+  width: 200px;
+  float: left;
+  overflow-x: hidden;
+}
+
+aside a {
+  display: block;
+  width: 170px;
+  padding: 0 10px 0 20px;
+  height: 30px;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+aside a.sele {
+  width: 166px;
+}
+
+aside a:hover span, aside a:focus span {
+  margin-left: 5px;
+}
+
+aside .sidehead a {
+  width: 176px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  margin: 0 0 0 0;
+  padding: 0 12px 0 12px;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+
+/* ▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣ */
+/* ★ 본문부 ★ */
+/* ▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣ */
+div.torso article {
+  margin: 0 0 0 0;
+  padding: 10px 10px 10px 10px;
+  width: 740px;
+  float: right;
+  text-align: justify;
+  text-justify: inter-cluster;
+}
+
+div.torso figure {
+  margin: 10px 20px 10px 20px;
+}
+
+/* ▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣ */
+/* ★ 하단 ★ */
+/* ▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣ */
+footer {
+  background: #000000;
+  color: #7f7f7f;
+  padding: 20px 40px 20px 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer a:link, footer a:visited {
+  color: #aaaaaa;
+}
+
+footer a:active, footer a:hover, footer a:focus {
+  color: #ffffff;
+  background: none;
+}

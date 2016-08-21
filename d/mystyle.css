@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+/* 웹폰트 */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+	background-image: url(img/bg.jpg);
+	background-position: center center;
+	color: #fff;
+	font-size: 14px;
+    font-family: 'Ubuntu', 'Nanum Gothic', sans-serif;
+    /* 기본 폰트는 우분투체. 단, 한글은 나눔고딕. */
+    font-weight: 300;
+}
+a:link, a:visited {
+	color: #5f5;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:active, a:hover {
+	color: #fff;
+	background-color: #050;
+	text-decoration: none;
+}
+
+#siteheader {
+	height: 52px;
+	/* min-height: 50px;
+	max-height: 52px; */
+	width: 100%;
+	//float: left;
+	display: block;
+	background-color: rgba(0, 85, 0, .5);
+	color: #FFF;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#siteheader a {
+	background: none;
+}
+#siteheader a#menubtn {
+	float: right;
+	width: 50px;
+	height: 50px;
+}
+
+#siteheader:after {
+  width: 100%;
+  height: 2px;
+  display: block;
+  content : '';
+  background: -webkit-linear-gradient(left, rgba( 85, 255,  85,  .4)   0%, rgba( 85, 255,  85,  .4)  10%,
+                                            rgba( 85, 255,  85, .55)  10%, rgba( 85, 255,  85, .55)  20%,
+                                            rgba( 85, 255,  85,  .7)  20%, rgba( 85, 255,  85,  .7)  30%,
+                                            rgba( 85, 255,  85, .85)  30%, rgba( 85, 255,  85, .85)  40%,
+                                            rgba( 85, 255,  85,   1)  40%, rgba( 85, 255,  85,   1)  60%,
+                                            rgba( 85, 255,  85, .85)  60%, rgba( 85, 255,  85, .85)  70%,
+                                            rgba( 85, 255,  85,  .7)  70%, rgba( 85, 255,  85,  .7)  80%,
+                                            rgba( 85, 255,  85, .55)  80%, rgba( 85, 255,  85, .55)  90%,
+                                            rgba( 85, 255,  85,  .4)  90%, rgba( 85, 255,  85,  .4) 100%);
+  background: -moz-linear-gradient(right, rgba( 85, 255,  85,  .4)   0%, rgba( 85, 255,  85,  .4)  10%,
+                                          rgba( 85, 255,  85, .55)  10%, rgba( 85, 255,  85, .55)  20%,
+                                          rgba( 85, 255,  85,  .7)  20%, rgba( 85, 255,  85,  .7)  30%,
+                                          rgba( 85, 255,  85, .85)  30%, rgba( 85, 255,  85, .85)  40%,
+                                          rgba( 85, 255,  85,   1)  40%, rgba( 85, 255,  85,   1)  60%,
+                                          rgba( 85, 255,  85, .85)  60%, rgba( 85, 255,  85, .85)  70%,
+                                          rgba( 85, 255,  85,  .7)  70%, rgba( 85, 255,  85,  .7)  80%,
+                                          rgba( 85, 255,  85, .55)  80%, rgba( 85, 255,  85, .55)  90%,
+                                          rgba( 85, 255,  85,  .4)  90%, rgba( 85, 255,  85,  .4) 100%);
+  background: -o-linear-gradient(right, rgba( 85, 255,  85,  .4)   0%, rgba( 85, 255,  85,  .4)  10%,
+                                        rgba( 85, 255,  85, .55)  10%, rgba( 85, 255,  85, .55)  20%,
+                                        rgba( 85, 255,  85,  .7)  20%, rgba( 85, 255,  85,  .7)  30%,
+                                        rgba( 85, 255,  85, .85)  30%, rgba( 85, 255,  85, .85)  40%,
+                                        rgba( 85, 255,  85,   1)  40%, rgba( 85, 255,  85,   1)  60%,
+                                        rgba( 85, 255,  85, .85)  60%, rgba( 85, 255,  85, .85)  70%,
+                                        rgba( 85, 255,  85,  .7)  70%, rgba( 85, 255,  85,  .7)  80%,
+                                        rgba( 85, 255,  85, .55)  80%, rgba( 85, 255,  85, .55)  90%,
+                                        rgba( 85, 255,  85,  .4)  90%, rgba( 85, 255,  85,  .4) 100%);
+  background: linear-gradient(to right, rgba( 85, 255,  85,  .4)   0%, rgba( 85, 255,  85,  .4)  10%,
+                                        rgba( 85, 255,  85, .55)  10%, rgba( 85, 255,  85, .55)  20%,
+                                        rgba( 85, 255,  85,  .7)  20%, rgba( 85, 255,  85,  .7)  30%,
+                                        rgba( 85, 255,  85, .85)  30%, rgba( 85, 255,  85, .85)  40%,
+                                        rgba( 85, 255,  85,   1)  40%, rgba( 85, 255,  85,   1)  60%,
+                                        rgba( 85, 255,  85, .85)  60%, rgba( 85, 255,  85, .85)  70%,
+                                        rgba( 85, 255,  85,  .7)  70%, rgba( 85, 255,  85,  .7)  80%,
+                                        rgba( 85, 255,  85, .55)  80%, rgba( 85, 255,  85, .55)  90%,
+                                        rgba( 85, 255,  85,  .4)  90%, rgba( 85, 255,  85,  .4) 100%);
+  background-color: black;
+  background-size: 320px 1px;
+  background-position: 0px 0px;
+  animation-name: linemov;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(10);
+}
+@keyframes linemov {
+    from {background-position: 0px 0px;}
+    to   {background-position: -320px 0px;}
+}
+
+#sitetopmenu {
+	/* height: 40px; */
+	width: 100%;
+	background-color: #000;
+	color: #FFF;
+	text-align: center;
+    /* margin-top: 2px; */
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+#sitetopmenu a {
+	margin: 0px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #000;
+	font-size: 18px;
+	display: inline-block;
+	text-align: center;
+}
+#sitetopmenu a:active,
+#sitetopmenu a:hover {
+	background-color: #050;
+	color: #fff;
+}
+
+.contbox {
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(0, 0, 0, .5);
+	display: inline-block;
+}
+
+.bxs90 {
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+
+ul.bxslider li{
+	margin-top: -10px;
+}
+ul.bxslider li img {
+	margin: auto;	
+	display: block;
+}
+
+.contbox h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 4px;
+	background: #000;
+	color: #fff;
+	border-bottom: 3px double #0a0;
+}
+
+.contbox h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 6px;
+	background: #000;
+	color: #fff;
+	border-bottom: 6px double #0a0;
+}
+
+.contbox ul.notice {
+	margin-top: 0px;
+	margin-right: 8px;
+	margin-bottom: 0px;
+	margin-left: 8px;
+	padding: 0px;
+	min-height: 124px;
+}
+
+.contbox ul.notice li {
+	margin: 0px;
+	padding: 4px;
+	list-style-type: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #0a0;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.contbox ul.notice li:last-of-type {
+	border-bottom: none;
+}
+
+.productlist_m {
+	margin-top: 0px;
+	margin-right: 8px;
+	margin-bottom: 0px;
+	margin-left: 8px;
+	padding: 0px;
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+}
+
+.productlist_m .prods {
+	margin: 0;
+	padding: 0px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.productlist_m .prods a {
+	margin: 8px auto;
+	padding: 8px;
+	width: 80%;
+	border: 1px solid #0a0;
+	overflow: hidden;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.productlist_m a img {
+	width: 80px;
+	height: 80px;
+	clear: both;
+}
+
+.productlist {
+	margin-top: 0px;
+	margin-right: 8px;
+	margin-bottom: 0px;
+	margin-left: 8px;
+	padding: 0px;
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+}
+
+.productlist .prods {
+	margin: 0;
+	padding: 0px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.productlist .prods a {
+	margin: 8px auto;
+	padding: 8px;
+	width: 80%;
+	border: 1px solid #0a0;
+	overflow: hidden;
+	white-space: nowrap;
+	display: inline-block;
+	line-height: 1.8;
+}
+
+.productlist a img {
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+.prods a:active,
+.prods a:hover {
+	background-color: #050;
+	color: #fff;
+}
+
+.incontbox {
+	margin: 8px;
+}
+
+#productinfo table {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+
+#productinfo table th {
+	width: 40px;
+	text-shadow: 0 0 2px #5f5;
+	background-color: rgba(0, 255, 0, .2);
+}
+
+#productinfo .productname {
+	font-weight: bold;
+}
+
+#productinfo .price {
+	font-size: 20px;
+	font-weight: bold;
+	color: #f55;
+}
+
+
+/* Transit */
+a {
+    -webkit-transition: all .25s; /* Safari */
+    transition: all .25s;
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q&amp;A :: 주완컴퓨터</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="layout.css" rel="stylesheet" type="text/css">
+<link href="layoutadd.css" rel="stylesheet" type="text/css">
+<link href="mystyle.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script src="toggledisplay.js"></script>
+
+</head>
+<body>
+<div class="" id="siteheader">
+  <a href="#" onClick="toggledisplay('sitetopmenu'); menubtnchange();" id="menubtn"><img src="img/menubtn.png" alt="메뉴" name="menubtn" id="menubtnimg"></a>
+  <a href="index.html"><img src="img/timage.png" alt="주완컴퓨터" name="titleimg" id="titleimg"></a>
+</div>
+<div class="" id="sitetopmenu" style="display: none;"><a href="index.html">홈</a><a href="products_com.html">완제품</a><a href="products_part.html">부품/주변기기</a><a href="qna.html">Q&amp;A</a><a href="storeintro.html">매장소개</a></div>
+
+<div class="gridContainer clearfix">
+	<div id="produclist" class="contbox">
+  	<h2>Q&amp;A</h2>
+    <iframe src="http://parkjuwan2.dothome.co.kr/xe/testboard3" style="border: 0; background: none; width: 100%; height: 680px;"></iframe>
+    </div>
+  <div id="footh" style="background-color:#050; clear: both; text-align:center; font-weight: bold; font-size: 16px; padding-top: 8px; padding-bottom: 8px;">※ 본 사이트는 상업적 용도가 아니며 교육용 목적으로 제작된 사이트입니다.</div>
+</div>
+</body>
+</html>

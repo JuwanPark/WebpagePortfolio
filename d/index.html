@@ -1,0 +1,146 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>주완컴퓨터</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="layout.css" rel="stylesheet" type="text/css">
+<link href="layoutadd.css" rel="stylesheet" type="text/css">
+<link href="mystyle.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script src="toggledisplay.js"></script>
+<!-- jQuery library (served from Google) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    
+    <!-- bxSlider 시작 -->
+      <!-- bxSlider Javascript file -->
+      <script src="./bxslider/jquery.bxslider.min.js"></script>
+      <!-- bxSlider CSS file -->
+      <link href="./bxslider/jquery.bxslider.css" rel="stylesheet" />
+      <script>
+        $(document).ready(function(){
+          $('.bxslider').bxSlider();
+        });
+      </script>
+    <!-- bxSlider 끝 -->
+
+</head>
+<body>
+<div class="" id="siteheader">
+  <a href="#" onClick="toggledisplay('sitetopmenu'); menubtnchange();" id="menubtn"><img src="img/menubtn.png" alt="메뉴" name="menubtn" id="menubtnimg"></a>
+  <a href="index.html"><img src="img/timage.png" alt="주완컴퓨터" name="titleimg" id="titleimg"></a>
+</div>
+<div class="" id="sitetopmenu" style="display: none;"><a href="index.html">홈</a><a href="products_com.html">완제품</a><a href="products_part.html">부품/주변기기</a><a href="qna.html">Q&amp;A</a><a href="storeintro.html">매장소개</a></div>
+
+<div class="gridContainer clearfix">
+  <div id="headslideimg" class="contbox">
+    <div class="bxs90">
+      <ul class="bxslider">
+        <li><img src="./img/mainimg.png" /></li>
+        <li><img src="./img/detopthumb.jpg" /></li>
+        <li><img src="./img/laptopthumb.jpg" /></li>
+        <li><img src="./img/ssdthumb.jpg" /></li>
+      </ul>
+    </div>
+  </div>
+  <div id="noticediv" class="contbox">
+  	<h3>공지사항</h3>
+   	<ul class="notice">
+      <li><a href="#">사정상 임시 휴무 안내</a></li>
+      <li><a href="#">물품 배송 시간 안내</a></li>
+      <li><a href="#">프린터 잉크 카트리지 구입/충전 관련</a></li>
+      <li><a href="#">CPU/GPU 등 호환성 관련 안내</a></li>
+      <li><a href="#">교환/반품 관련 안내</a></li>
+    </ul>
+  </div>
+  <div id="whatsnew" class="contbox">
+  	<h3>새로운 소식</h3>
+   	<ul class="notice">
+      <li><a href="#">데스크톱(사무용/게임용) 할인 이벤트</a></li>
+      <li><a href="#">중고 컴퓨터 파격가에 할인</a></li>
+      <li><a href="#">새로 입고된 SSD 할인 이벤트</a></li>
+      <li><a href="#">인텔 코어 CPU 할인 이벤트</a></li>
+      <li><a href="#">노트북(사무용/게임용) 할인 이벤트</a></li>
+    </ul>
+  </div>
+  <div id="lstcomp" class="contbox">
+  	<h3>완제품</h3>
+   	<div class="productlist_m">
+      <div class="prods"><a href="prodetail.html">
+      	<img src="img/detopthumb.jpg"><br />
+        좋은 컴퓨터
+      </a></div>
+      <div class="prods"><a href="prodetail.html">
+      	<img src="img/detopthumb.jpg"><br />
+        좋은 컴퓨터
+      </a></div>
+      <div class="prods"><a href="prodetail.html">
+      	<img src="img/detopthumb.jpg"><br />
+        좋은 컴퓨터
+      </a></div>
+      <div class="prods"><a href="prodetail.html">
+      	<img src="img/detopthumb.jpg"><br />
+        좋은 컴퓨터
+      </a></div>
+      <div class="prods"><a href="prodetail.html">
+      	<img src="img/detopthumb.jpg"><br />
+        좋은 컴퓨터
+      </a></div>
+      <div class="prods"><a href="prodetail.html">
+      	<img src="img/detopthumb.jpg"><br />
+        좋은 컴퓨터
+      </a></div>
+    </div>
+  </div>
+  <div id="lstpart" class="contbox">
+  	<h3>부품/주변기기</h3>
+   	<div class="productlist_m">
+      <div class="prods"><a href="#">
+      	<img src="img/ssdthumb.jpg"><br />
+        좋은 부품
+      </a></div>
+      <div class="prods"><a href="#">
+      	<img src="img/ssdthumb.jpg"><br />
+        좋은 부품
+      </a></div>
+      <div class="prods"><a href="#">
+      	<img src="img/ssdthumb.jpg"><br />
+        좋은 부품
+      </a></div>
+      <div class="prods"><a href="#">
+      	<img src="img/ssdthumb.jpg"><br />
+        좋은 부품
+      </a></div>
+      <div class="prods"><a href="#">
+      	<img src="img/ssdthumb.jpg"><br />
+        좋은 부품
+      </a></div>
+      <div class="prods"><a href="#">
+      	<img src="img/ssdthumb.jpg"><br />
+        좋은 부품
+      </a></div>
+    </div>
+  </div>
+  <div id="footh" style="background-color:#050; clear: both; text-align:center; font-weight: bold; font-size: 16px; padding-top: 8px; padding-bottom: 8px;">※ 본 사이트는 상업적 용도가 아니며 교육용 목적으로 제작된 사이트입니다.</div>
+</div>
+</body>
+</html>

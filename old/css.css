@@ -1,0 +1,63 @@
+body {
+  background: url('./img/bg.png') center fixed;
+  color: rgb(255, 255, 255);
+  margin: 0 0 0 0;
+}
+
+a {text-decoration: none;}
+a:link,   a:visited          { color:#00ff00; }
+a:active, a:hover, a:focus   { color:#ffffff; }
+
+
+#maincc {
+  width:960px;
+  min-height:720px;
+  margin: 0 auto;
+  background-color:rgba(0, 0, 0, .5);
+}
+
+#headmenu {
+  height:60px;
+  background-image: url('./img/jctitle.png');
+  background-repeat: no-repeat;
+  background-color:rgb(0, 0, 0);
+}
+
+#headnav {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  margin: 20px 20px 20px 20px;
+  float: right;
+}
+
+#headnav a {
+  padding: 0 10px 0 10px;
+}
+
+#bodycon {
+  height:680px;
+  width:920px;
+  display:block;
+  padding: 20px 20px 20px 20px;
+}
+
+#footinfo {
+  height:20px;
+  background-image: url('./img/jcfooter.png');
+  background-repeat: no-repeat;
+  background-color:rgb(0, 0, 0);
+  padding:20px 20px 20px 220px;
+  line-height: 20px;
+  color: rgb(170, 170, 170);
+  text-align: center;
+}
+#footwarning {
+  height:20px;
+  background-color:rgb(0, 0, 0);
+  padding:0px 20px 20px 20px;
+  line-height: 20px;
+  color: rgb(255, 85, 85);
+  font-weight: bold;
+  text-align: center;
+}
