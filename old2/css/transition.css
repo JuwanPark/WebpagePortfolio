@@ -1,0 +1,11 @@
+/* 전환효과를 위한 css 파일입니다.
+이 파일은 jQuery를 사용하여 가장 늦게 import합니다. */
+a, div, span, input, textarea, button {
+  -webkit-transition: all .5s;  /* Safari */
+  transition: all .5s;
+}
+
+.chkSlider {
+  -webkit-transition: all .1s;  /* Safari */
+  transition: all .1s;
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Index Page</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="width.css" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var scrollamt = 0;
+		
+		for (i = 0; i < $("a").length; i++) { 
+			$("a:eq(" + i + ")").css("color", "hsl(" + (i % 18) * 20 + ", 100%, 50%)");
+		}
+
+		$(window).scroll(function() {	retype(); });
+		$(window).ready(function() {	retype(); });
+		$(window).resize(function() {	retype(); });
+	
+		function retype () {
+			$("#htitle").css("color", "hsl(" + scrollhue(8, 64) + ", 100%, 50%)");
+			$(".abtpart1").css("fill", "hsl(" + scrollhue(5, 76) + ", 100%, 50%)");
+			$(".abtpart2").css("fill", "hsl(" + scrollhue(6, 72) + ", 100%, 50%)");
+			$(".abtpart3").css("fill", "hsl(" + scrollhue(7, 68) + ", 100%, 50%)");
+			$(".abtpart4").css("fill", "hsl(" + scrollhue(9, 88) + ", 100%, 50%)");
+			$("nav").css("border-bottom", "2px solid hsl(" + scrollhue(10, 60) + ", 100%, 50%)");
+			$("#maincontainer").css("border-left", "3px double hsl(" + scrollhue(11, 80) + ", 100%, 50%)");
+			$("#maincontainer").css("border-right", "3px double hsl(" + scrollhue(11, 80) + ", 100%, 50%)");
+		}
+	
+		$("a").hover(function() {
+			$(this).css("background-color", "hsl(" + ($("a").index(this) % 18) * 20 + ", 100%, 20%)");
+			$(this).css("color", "#fff");
+		}, function() {
+			$(this).css("background-color", "transparent");
+			$(this).css("color", "hsl(" + ($("a").index(this) % 18) * 20 + ", 100%, 50%)");
+		});
+		
+		function scrollhue (coloroffset, scrcyc) {
+			return ((Math.floor($(window).scrollTop() / scrcyc) + coloroffset) % 18) * 20;
+		}
+		
+		$("#navtriangleleft").hover(function() {
+			scrollamt = -1;
+		}, function() {
+			scrollamt = 0;
+		});
+
+		$("#navtriangleright").hover(function() {
+			scrollamt = 1;
+		}, function() {
+			scrollamt = 0;
+		});
+		
+		setInterval(function(){
+			if (scrollamt != 0) {
+				$("#navstrip").scrollLeft($("#navstrip").scrollLeft() + scrollamt);
+			}
+		}, 1);
+	});
+</script>
+</head>
+
+<body>
+	<input type="checkbox" id="appschk" />
+  <header>
+    <label id="aclabel" for="appschk"><svg id="appsbt">
+		<g id="appclose">
+			<polygon points="14,9 24,19 34,9 39,14 29,24 39,34 34,39 24,29 14,39 9,34 19,24 9,14" class="abtpart4"/>
+		</g>
+		<g id="appopen">
+			<rect x="9" y="57" width="30" height="6" class="abtpart1" />
+			<rect x="9" y="69" width="30" height="6" class="abtpart2" />
+			<rect x="9" y="81" width="30" height="6" class="abtpart3" />
+		</g>
+    </svg></label>
+  	<h1 id="htitle">Juwan Park</h1>
+  </header>
+  <nav>
+	<svg id="navtriangleleft">
+		<path d="M 0,0 H 28 V 38 H 0 Z M 20,7 l -12,12 l 12,12 Z" fill="#000" />
+	</svg>
+	<svg id="navtriangleright">
+		<path d="M 0,0 H 28 V 38 H 0 Z M 8,31 l 12,-12 l -12,-12 Z" fill="#000" />
+	</svg>
+  	<div id="navstrip"><span style="display:inline-block;"
+	  ><a href="#">Home</a
+	  ><a href="#">Menu1</a
+	  ><a href="#">Menu2</a
+	  ><a href="#">Menu3</a
+	  ><a href="#">Menu4</a
+	  ><a href="#">Menu5</a
+	  ><a href="#">Menu6</a
+	  ><a href="#">Menu7</a
+      ></span>
+    </div>
+  </nav>
+  <div id="maincontainer">
+  	<h1><a href="#">박주완</a> Juwan Park</h1>
+	<p>이 문서는 제이쿼리를 이용하여 무지개색 링크와 스크롤에 따른 색 변화를 구현하였습니다.</p>
+  	<h2><a href="#">국민교육헌장</a></h2>
+	<p>우리는 <a href="#">민족 중흥</a>의 역사적 사명을 띠고 이 땅에 태어났다.
+	조상의 빛난 얼을 오늘에 되살려, 안으로 <a href="#">자주독립</a>의 자세를 확립하고,
+	밖으로 <a href="#">인류 공영</a>에 이바지할 때다.
+	이에, 우리의 나아갈 바를 밝혀 교육의 지표로 삼는다.</p>
+	<p>성실한 마음과 튼튼한 몸으로, 학문과 기술을 배우고 익히며,
+	타고난 저마다의 소질을 계발하고, 우리의 처지를 약진의 발판으로 삼아,
+	창조의 힘과 개척의 정신을 기른다. 공익과 질서를 앞세우며 능률과 실질을 숭상하고,
+	경애와 신의에 뿌리박은 상부상조의 전통을 이어받아, 명랑하고 따뜻한 협동 정신을 북돋운다.
+	우리의 창의와 협력을 바탕으로 나라가 발전하며, 나라의 융성이 나의 발전의 근본임을 깨달아,
+	자유와 권리에 따르는 책임과 의무를 다하며,
+	스스로 국가 건설에 참여하고 봉사하는 국민 정신을 드높인다.</p>
+	<p>반공 민주 정신에 투철한 애국 애족이 우리의 삶의 길이며,
+	자유 세계의 이상을 실현하는 기반이다.
+	길이 후손에 물려줄 영광된 통일 조국의 앞날을 내다보며,
+	신념과 긍지를 지닌 근면한 국민으로서, 민족의 슬기를 모아 줄기찬 노력으로,
+	<a href="#">새 역사를 창조하자.</a></p>
+	<p>&nbsp;</p>
+	<p style="text-align: center;"><img src="gfriend.jpg" /></p>
+  	<h2><a href="#">여자친구</a> - 시간을 달려서</h2>
+	<div class="multicols">
+		<p><span class="firstbig">다</span>가서지 못하고 헤매이고 있어<br />
+		좋아하지만 다른 곳을 보고 있어<br />
+		가까워지려고 하면 할수록<br />
+		멀어져 가는 우리 둘의 마음처럼</p>
+		<p>만나지 못해 맴돌고 있어<br />
+		우린 마치 <a href="#">평행선</a>처럼<br />
+		말도 안 돼 우린 반드시 만날 거야<br />
+		기다릴게 언제까지나</p>
+		<p>미처 말하지 못했어 다만 너를 좋아했어<br />
+		어린 날의 꿈처럼 마치 기적처럼<br />
+		<a href="#">시간을 달려서</a> 어른이 될 수만 있다면<br />
+		거친 세상 속에서 손을 잡아 줄게</p>
+		<p>다가서려 해 봐도 엇갈리고 있어<br />
+		좋아한단 말도 아직 못하고 있어<br />
+		머뭇거리는 널 보고 있으면<br />
+		우린 아직도 많이 어리긴 한가 봐</p>
+		<p>좁혀지지 않아 <a href="#">한 끗 차이</a><br />
+		우린 마치 <a href="#">평행선</a>처럼<br />
+		언젠가는 못다 한 말을 전할 거야<br />
+		다가갈게 언제까지나</p>
+		<p>미처 말하지 못했어 다만 너를 좋아했어<br />
+		어린 날의 꿈처럼 마치 기적처럼<br />
+		<a href="#">시간을 달려서</a> 어른이 될 수만 있다면<br />
+		거친 세상 속에서 손을 잡아 줄게</p>
+		<p>시간 속에 갇혀 길을 헤매여도<br />
+		그렇지만 우린 결국 만날 거야<br />
+		진심인 것만 알아 줘 정말<br />
+		서툴기만 한대도</p>
+		<p>미처 말하지 못했어 다만 너를 좋아했어<br />
+		어린 날의 꿈처럼 마치 기적처럼<br />
+		<a href="#">시간을 달려서</a> 어른이 될 수만 있다면<br />
+		거친 세상 속에서 너를 안아 줄게</p>
+		<p>이거 하나만 약속해 변치 않기를 바랄게<br />
+		그때도 지금처럼 날 향해 웃어 줘<br />
+		<a href="#">시간이 흘러서</a> 어른이 될 수만 있다면<br />
+		엇갈림 그 속에서 손을 잡아 줄게</p>
+	</div>
+  	<h2><a href="#">소나기</a> 결말</h2>
+	<p><a href="#">개울물</a>은 날로 여물어 갔다.</p>
+	<p><a href="#">소년</a>은 갈림길에서 아랫 쪽으로 가 보았다.
+	갈밭 머리에서 바라보는 <a href="#">서당골 마을</a>은 쪽빛 하늘 아래 한결 가까워 보였다.</p>
+	<p>어른들의 말이, 내일 <a href="#">소녀</a>네가 <a href="#">양평읍</a>으로 이사 간다는 것이었다.
+	거기 가서는 조고마한 <a href="#">가겟방</a>을 보게 되리라는 것이었다.</p>
+	<p>소년은 저도 모르게 주머니 속 <a href="#">호두알</a>을 만지작 거리며,
+	한 손으로는 수없이 <a href="#">갈꽃</a>을 휘어 꺾고 있었다.</p>
+	<p>그날 밤, <a href="#">소년</a>은 자리에 누워서도 같은 생각뿐이었다.
+	내일 <a href="#">소녀</a>네가 이사하는 걸 가 보나 어쩌나, 가면 <a href="#">소녀</a>를 보게 될까 어떨까.</p>
+	<p>그러다가 까무룩 잠이 들었는가 하는데,</p>
+	<p>｢허, 참, <a href="#">세상일</a>두 …… ｣</p>
+	<p>마을 갔던 <a href="#">아버지</a>가 언제 돌아왔는지,</p>
+	<p>｢<a href="#">윤초시</a> 댁두 말이 아니어. 그 많든 <a href="#">전답</a>을 다 팔아 버리구,
+	대대루 살아오든 집마저 남의 손에 넘기드니, 똑 <a href="#">악상</a>꺼지 당하는 걸 보면 …… ｣</p>
+	<p><a href="#">남포불</a> 밑에서 <a href="#">바누질감</a>을 안고 있던 <a href="#">어머니</a>가,</p>
+	<p>｢<a href="#">증손자</a>라곤 <a href="#">기집애</a> 그애 하나뿐이었지요?｣</p>
+	<p>｢그렇지. <a href="#">사내</a>가 둘 있든건 어려서 잃어 버리구 …… ｣</p>
+	<p>｢어쩌믄 그렇게 <a href="#">자식 복</a>이 없을까.｣</p>
+	<p>｢글쎄 말이지. 이번 앤 꽤 여러날 앓는걸 약두 변변히 못써 봤다드군.
+	지금 같아서는 윤초시네두 대가 끊긴 셈이지…….
+	그런데 참 이번 기집애는 어린 것이 여간 <a href="#">잔망스럽지</a>가 않어.
+	글쎄 죽기 전에 이런 말을 했다지?
+	자기가 죽거든 <a href="#">자기 입든 옷을 꼭 그대로 입혀서 묻어 달라구</a>…….｣</p>
+</div>
+</body>
+</html>

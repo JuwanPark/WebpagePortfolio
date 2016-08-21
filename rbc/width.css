@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* Mobile Layout: 480px and below. */
+#maincontainer {
+	width: calc(100% - 32px);
+	//width: calc(100% - 32px);
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: #000;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header:after {
+	background-image: url('linearrainbow.png');
+	animation-name: linemov;
+	animation-duration: .4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(36);
+}
+
+/* Tablet Layout: 481px to 960px. Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 481px) {
+
+#maincontainer {
+	//width: calc(100% - 38px);
+	width: calc(100% - 48px);
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+header:after {
+	background-image: url('linearrainbows.png');
+	animation-name: linemovs;
+}
+
+.multicols {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+}
+
+}
+
+/* Desktop Layout: 961px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media only screen and (min-width: 961px) {
+
+#maincontainer {
+	width: 90%;
+}
+
+.multicols {
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+	-moz-column-count: 3; /* Firefox */
+	column-count: 3;
+}
+
+}
+
+@keyframes linemov {
+    from {background-position: 0px 0px;}
+    to   {background-position: -576px 0px;}
+}
+@keyframes linemovs {
+    from {background-position: 0px 0px;}
+    to   {background-position: -1152px 0px;}
+}
+@keyframes linemovt {
+    from {background-position: 0px 0px;}
+    to   {background-position: -144px 0px;}
+}

@@ -1,0 +1,63 @@
+/* 테마별로 다른 색상을 위한 CSS 파일입니다.
+이 파일은 Blue 테마용입니다.
+┏━━━┯━━━━┯━━━━┯━━━━┓
+┃ 구분 │  Blue  │ H-pink │ Green  ┃
+┠───┼────┼────┼────┨
+┃ bg 1 │ 00002a │ 2a0015 │ 002a15 ┃
+┃ bg 2 │ 000055 │ 55002a │ 00552a ┃
+┃ bg 3 │ 00007f │ 7f003f │ 007f3f ┃
+┃ bg 4 │ 0000aa │ aa0055 │ 00aa55 ┃
+┠───┼────┼────┼────┨
+┃ fg 1 │ 00aaff │ ff00aa │ aaff00 ┃
+┃ fg 2 │ 00ffff │ ff7fd4 │ 7fff55 ┃
+┃ fg 3 │ 5555ff │ aa55ff │ 55ffaa ┃
+┗━━━┷━━━━┷━━━━┷━━━━┛
+*/
+
+body { background: url('../img/bg_blue.png') center fixed; }
+
+a:link,   a:visited          { color:#00ffff; }
+a:active, a:hover, a:focus   { color:#ffffff; background-color:#0000aa; }
+
+::-webkit-input-placeholder  { color: #00aaff; }
+:-moz-placeholder            { color: #00aaff; }
+::-moz-placeholder           { color: #00aaff; }
+:-ms-input-placeholder       { color: #00aaff; }
+
+nav { background-color: #000055; }
+
+input, textarea { background-color: #00002a;  color: #00ffff; }
+input:hover, textarea:hover,
+input:focus, textarea:focus { background-color: #00007f;  color: #ffffff; }
+
+button                     { background-color: #000055;  color: #00ffff; }
+button:hover, button:focus { background-color: #0000aa;  color: #ffffff; }
+
+div.loginWidget label .chkSlider { border-left: 20px solid #00aaff; }
+
+div.loginWidget .personIcon { color: #00aaff; }
+div.loginWidget #moreJoin { background-color: #000055; }
+div.loginWidget .memberName { color: #00ffff; }
+
+nav a {
+  background-color: #000055;
+  border-bottom: 0px solid #5555ff;
+}
+nav a.sele { border-bottom: 5px solid #5555ff; }
+nav a.sele:hover, nav a.sele:focus { border-bottom: 5px solid #00ffff; }
+
+div.torso { background-image: url('../img/dkbg_blue.png'); }
+
+aside a {
+  background-color: #00002a;
+  border-right: 0px solid #5555ff;
+}
+aside a.sele { border-right: 4px solid #5555ff; }
+aside a.sele:hover,
+aside a.sele:focus { border-right: 4px solid #00ffff; }
+
+aside .sidehead a { background-color: #00007f; }
+aside .sidehead a:hover,
+aside .sidehead a:focus { background-color:#0000aa; }
+
+footer { border-top: 5px solid #000055; }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <link href="./css/basic.css" rel="stylesheet" type="text/css" />
+    <link href="./css/blue.css" rel="stylesheet" type="text/css" />
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+      // 전환효과는 가장 늦게 import합니다. (구글 크롬 관련 문제 수정)
+      $(document).ready(function() {
+        $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', './css/transition.css') );
+      });
+    </script>
+    <script src="./js/xes.js"></script>
+    <title>Layout Test</title>
+  </head>
+
+  <body>
+    <div class="rbody">
+      <header>
+        <div class="htitle">
+          <div class="loginWidget">
+            <div class="loginBox">
+              <input name="userid" type="text" class="loginInput" title="ID" placeholder="Your ID" />
+              <input name="userpw" type="password" class="loginInput" title="Password" placeholder="Password" />
+            </div>
+            <button class="loginBtn icon ion-log-in" title="Log in"></button>
+            <div class="stretcher"></div>
+            <input type="checkbox" name="idRemember" id="idRemember" class="chkBox hiddenChk" onChange="rememberWarning();" />
+            <label title="Remember" for="idRemember">
+              <span class="chkSwitch"><span class="chkSlider"></span></span>
+              Remember
+            </label>
+            <button class="moreBtn icon ion-android-more-vertical" title="more..." onClick="toggleJoinmenu();" ></button>
+            <div id="moreJoin">
+              <a href="#" title="Forgot ID or password?">Forgot ID/PW?</a><a href="#" title="Join now!" style="font-weight: bold; margin-left: 10px;">Join</a>
+              <br /><a href="#" title="Login with Social account">Login with Social account</a>
+            </div>
+            <!-- <div id="memberInfo">
+              <span class="personIcon icon ion-android-contact"></span> <span class="memberName">홍길동</span>님, 환영합니다!
+            </div> -->
+          </div>
+        </div>
+        <div>
+          <nav onClick="hideJoinmenu();">
+            <div class="menus">
+              <a href="#" class="sele">홈</a>
+              <a href="#">여기</a>
+              <a href="#">저기</a>
+            </div>
+            <div class="searchBox">
+              <input name="is_keyword" type="text" class="keyword" title="keyword" placeholder="Search..." />
+              <button class="icon ion-android-search"></button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="torso" onClick="hideJoinmenu();">
+        <aside>
+          <div class="sidehead"><a href="#">홈</a></div>
+          <a href="#" class="sele"><span>샘플 1</span></a>
+          <a href="#"><span>샘플 2</span></a>
+          <a href="#"><span>샘플 3</span></a>
+          <a href="#"><span>샘플 4</span></a>
+        </aside>
+        <article>
+          <h2 class="hidden">본문</h2>
+          <section>
+            <h3>국민교육헌장</h3>
+            <map name="mapsh">
+              <area shape="circle" coords="172, 60, 48" onClick="alert('저 예쁘죠?');" href="#">
+            </map>
+            <p>우리는 <a href="#">민족 중흥</a>의 역사적 사명을 띠고 이 땅에 태어났다.
+              조상의 빛난 얼을 오늘에 되살려, 안으로 자주독립의 자세를 확립하고, 밖으로 인류 공영에 이바지할 때다.
+              이에, 우리의 나아갈 바를 밝혀 교육의 지표로 삼는다.</p>
+            <figure style="float:right;">
+              <img src="./img/sample.jpg" width="350" alt="샘플 사진" usemap="mapsh" />
+              <figcaption>샘플 사진</figcaption>
+            </figure>
+            <p>성실한 마음과 튼튼한 몸으로, 학문과 기술을 배우고 익히며, 타고난 저마다의 소질을 계발하고, 우리의 처지를 약진의 발판으로 삼아, 창조의 힘과 개척의 정신을 기른다.
+              공익과 질서를 앞세우며 능률과 실질을 숭상하고, 경애와 신의에 뿌리박은 상부상조의 전통을 이어받아, 명랑하고 따뜻한 협동 정신을 북돋운다.
+              우리의 창의와 협력을 바탕으로 나라가 발전하며, 나라의 융성이 나의 발전의 근본임을 깨달아, 자유와 권리에 따르는 책임과 의무를 다하며, 스스로 국가 건설에 참여하고 봉사하는 국민 정신을 드높인다.</p>
+            <p>반공 민주 정신에 투철한 애국 애족이 우리의 삶의 길이며, 자유 세계의 이상을 실현하는 기반이다.
+              길이 후손에 물려줄 영광된 통일 조국의 앞날을 내다보며, 신념과 긍지를 지닌 근면한 국민으로서, 민족의 슬기를 모아 줄기찬 노력으로, 새 역사를 창조하자.</p>
+            <figure style="width: 560px; margin: auto; clear: both;">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/e3Fa-hW1laE" allowfullscreen></iframe>
+              <figcaption>대국민토크쇼 안녕하세요에 출연한 여장 소년이 홍대에 나타난 모습입니다.<br />
+                동료 여성 멤버들과 함께 춤을 추는 데 위화감이 없지요. ^^</figcaption>
+            </figure>
+          </section>
+          <section>
+            <h4>Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+          <hr />
+          <div style="display: inline-block; float: right;">
+            <span class="icon ion-twitter" style="width: 40px;"></span>
+          </div>
+        </article>
+        <div class="stretcher"></div>
+      </div>
+      <footer>
+        <a href="#">이곳</a> | <a href="#">저곳</a><br />
+        Powered by <a href="http://xpressengine.com/" target="_blank"><strong>XE</strong></a>, Skin by <a href="#"><strong>Juwan Park</strong></a>.
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0; margin: 0 0 0 0; vertical-align: middle;" src="https://i.creativecommons.org/l/by/3.0/80x15.png" /></a> Some rights reserved.
+      </footer>
+    </div>
+  </body>
+
+</html>

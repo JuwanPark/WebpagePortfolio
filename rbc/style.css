@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {
+	font-family: 'Ubuntu', 'Nanum Gothic', sans-serif;
+}
+
+body {
+	color: #ddd;
+	background-color: #111;
+	margin: 50px 0 0 0;
+}
+
+a:link, a:visited, a:active, a:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+header {
+	width: 100%;
+	height: 48px;
+	background-color: #000;
+	display: block;
+	position: fixed;
+	z-index: 1000;
+	left: 0px;
+	top: 0px;
+}
+header:after {
+    width: 100%;
+    height: 2px;
+    display: block;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	content : '';
+}
+
+nav {
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	background-color: #000;
+	display: block;
+	position: fixed;
+	z-index: 900;
+	left: 0px;
+	top: 10px;
+	overflow: hidden;
+}
+
+#navtriangleleft, #navtriangleright {
+	width: 28px;
+	height: 38px;
+	background-image: url('linearrainbowt.png');
+	animation-name: linemovt;
+	animation-duration: .8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(36);
+}
+
+#navtriangleleft {
+	float: left;
+}
+
+#navtriangleright {
+	float: right;
+	animation-direction: reverse;
+}
+
+#navstrip {
+	width: calc(100% - 56px);
+	height: 60px;
+	white-space: nowrap;
+	overflow-x: scroll;
+}
+
+nav a {
+	height: 38px;
+	line-height: 38px;
+	display: inline-block;
+	padding: 0 10px 0 10px;
+}
+
+header h1#htitle {
+	display: block;
+	margin: 0;
+	width: calc(100% - 48px);
+	height: 48px;
+	line-height: 48px;
+	font-size: 30px;
+	text-align: center;
+	//background-color: #333;
+}
+
+#appschk {
+	display: none;
+}
+
+#aclabel {
+	width: 48px;
+	height: 48px;
+	padding: 0px;
+	overflow: hidden;
+	display: block;
+	float: right;
+	cursor: pointer;
+}
+
+#appsbt {
+	width: 48px;
+	height: 96px;
+	margin-top: -48px;
+}
+#appschk:checked ~ header #appsbt {margin-top: 0px;}
+
+#appschk:checked ~ nav {top: 50px;}
+#appschk:checked ~ #maincontainer {margin-top: 90px;}
+
+.firstbig {
+	float: left;
+	font-size: 30px;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	font-weight: 600;
+	text-align: center;
+}
+
+#maincontainer img {
+	max-width: 100%;
+}
+
+.multicols p {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+a, h1, nav, #appsbt, #maincontainer {
+	-webkit-transition: all .25s;
+	transition: all .25s;
+}
